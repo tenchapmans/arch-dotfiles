@@ -6,11 +6,11 @@
 # SUPER + FUNCTION KEYS
 #################################################################
 
-# Vivaldi
+# firefox
 super + F1
 	firefox
 
-# Atom
+# codium
 super + F2
 	codium
 
@@ -58,12 +58,12 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#codium
 super + e
     codium
 
-#Browser
-super + w
+#firefox
+super + f
     firefox
 
 #Conky-toggle
@@ -128,14 +128,6 @@ ctrl + alt + w
 ctrl + alt + e
     arcolinux-tweak-tool
 
-#conky-rotate
-ctrl + alt + Next
-     conky-rotate -n
-
-#conky-rotate
-ctrl + alt + Prior
-    conky-rotate -p
-
 #File-Manager
 ctrl + alt + b
      spacefm
@@ -154,7 +146,7 @@ ctrl + alt + f
 
 #Nitrogen
 ctrl + alt + i
-     nitrogen
+     nitrogen 
 
 #arcolinux-logout
 ctrl + alt + k
@@ -224,19 +216,6 @@ alt + Up
 #Wallpaper resume
 alt + Down
     variety --resume
-
-#Xfce appfinder
-alt + F2
-    xfce4-appfinder --collapsed
-
-#Xfce4-appfinder
-alt + F3
-    xfce4-appfinder
-
-#Xlunch app launcher
-#alt + F5
-#    xlunch --config ~/.config/xlunch/default.conf --input ~/.config/xlunch/entries.dsv   
-
 
 #################################################################
 #VARIETY KEYS WITH PYWAL

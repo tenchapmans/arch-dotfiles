@@ -14,16 +14,6 @@ ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 sh $SCRIPTPATH/scripts/wal.sh
 ##############################################################################
 
-#change your keyboard if you need it - azerty or qwerty
-#setxkbmap -layout be
-keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
-
-if [ $keybLayout = "be" ]; then
-  cp ~/.config/leftwm/config-azerty.toml ~/.config/leftwm/config.toml
-else
-  cp ~/.config/leftwm/config-qwerty.toml ~/.config/leftwm/config.toml
-fi
-
 leftwm-command "LoadTheme "$SCRIPTPATH"/config.toml"
 
 # keybindings daemon
@@ -34,7 +24,7 @@ if [ -f "$SCRIPTPATH/sxhkd/sxhkdrc" ] ; then
   sxhkd -c ~/.config/leftwm/themes/current/sxhkd/sxhkdrc &
 else
   # standard keybinds
-  sxhkd -c ~/.config/leftwm/sxhkd/sxhkdrc &
+  sxhkd -c ~/.config/sxhkd/sxhkdrc &
 fi
 
 function run {
