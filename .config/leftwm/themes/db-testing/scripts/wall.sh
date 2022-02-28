@@ -25,7 +25,7 @@ else
 
   # Set background
   if [ -x "$(command -v feh)" ]; then
-    feh --randomize --bg-fill $HOME/Insync/Apps/Desktoppr/*
+    feh --randomize --bg-fill $HOME/.wallpaper/*
         ####feh --randomize --bg-fill /usr/share/backgrounds/*
 
   fi
