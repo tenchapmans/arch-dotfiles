@@ -15,6 +15,7 @@ if [ -x "$(command -v wal)" ]; then
 
      wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]} -a 80
     cat ~/.cache/wal/color.leftwm-theme.toml &&
+    ####bat ~/.cache/wal/color.leftwm-theme.toml &&
     cp -f ~/.cache/wal/color.leftwm-theme.toml $HOME/.config/leftwm/themes/current/theme.toml &&
 
     leftwm command "LoadTheme $HOME/.config/leftwm/themes/current/theme.toml"

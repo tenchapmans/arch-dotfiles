@@ -6,7 +6,7 @@
 # First line removes the path; second line sets it.  Without the first line,
 # your path gets massive and fish becomes very slow.
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $HOME/.cargo/bin $HOME/.config/rofi/bin
+set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $HOME/.cargo/bin $HOME/.config/rofi/bin $HOME/apps/thonny/bin
 
 ### EXPORT ###
 set fish_greeting     
@@ -412,6 +412,9 @@ alias dtosbackup='cp -Rf /etc/dtos ~/dtos-backup-(date +%Y.%m.%d-%H.%M.%S)'
 clb
 
 neofetch
+
+status is-login; and pyenv init --path | source
+status is-interactive; and pyenv init - | source
 
 # zoxide init
 zoxide init fish | source
